@@ -1,0 +1,417 @@
+2023-07-18T22:04:40.551+09:00  INFO [item-service,,] 4444 --- [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "local"
+2023-07-18T22:04:41.705+09:00  INFO [item-service,,] 4444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-18T22:04:41.843+09:00  INFO [item-service,,] 4444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interfaces.
+2023-07-18T22:04:42.211+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=130fb817-7911-3599-8127-b7e0f87f4dc0
+2023-07-18T22:04:42.281+09:00  INFO [item-service,,] 4444 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.msa.item.feign.HistoryFeignClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-18T22:04:43.046+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-18T22:04:43.056+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-18T22:04:43.056+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-07-18T22:04:43.148+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-18T22:04:43.148+09:00  INFO [item-service,,] 4444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2578 ms
+2023-07-18T22:04:43.895+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-18T22:04:43.946+09:00  INFO [item-service,,] 4444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-07-18T22:04:44.110+09:00  WARN [item-service,,] 4444 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-18T22:04:44.236+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-18T22:04:44.335+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@58189ca1
+2023-07-18T22:04:44.337+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-18T22:04:44.357+09:00  INFO [item-service,,] 4444 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-07-18T22:04:44.357+09:00  WARN [item-service,,] 4444 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-07-18T22:04:45.428+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-18T22:04:45.439+09:00  INFO [item-service,,] 4444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-18T22:04:46.001+09:00  WARN [item-service,,] 4444 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-18T22:04:46.135+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-18T22:04:46.169+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'history-service' URL not provided. Will try picking an instance via load-balancing.
+2023-07-18T22:04:49.247+09:00  INFO [item-service,,] 4444 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-07-18T22:04:49.387+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 27 endpoint(s) beneath base path '/actuator'
+2023-07-18T22:04:49.510+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2560 (http) with context path ''
+2023-07-18T22:04:49.511+09:00  INFO [item-service,,] 4444 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2560
+2023-07-18T22:04:49.516+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-07-18T22:04:49.554+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-07-18T22:04:49.558+09:00  INFO [item-service,,] 4444 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-18T22:04:49.580+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-07-18T22:04:49.580+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-07-18T22:04:49.580+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-07-18T22:04:49.580+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-07-18T22:04:49.580+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-07-18T22:04:49.580+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-07-18T22:04:49.580+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-07-18T22:04:49.854+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-07-18T22:04:49.855+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-07-18T22:04:49.858+09:00  INFO [item-service,,] 4444 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-18T22:04:49.862+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1689685489861 with initial instances count: 0
+2023-07-18T22:04:49.874+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ITEM-SERVICE with eureka with status UP
+2023-07-18T22:04:49.875+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1689685489875, current=UP, previous=STARTING]
+2023-07-18T22:04:49.877+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:cf772d2d4134c8b277c146e812d51632: registering service...
+2023-07-18T22:04:49.985+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:cf772d2d4134c8b277c146e812d51632 - registration status: 204
+2023-07-18T22:04:50.038+09:00  INFO [item-service,,] 4444 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 10.965 seconds (process running for 11.877)
+2023-07-18T22:04:50.110+09:00  INFO [item-service,,] 4444 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-18T22:04:50.110+09:00  INFO [item-service,,] 4444 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-18T22:04:50.112+09:00  INFO [item-service,,] 4444 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-18T22:04:51.222+09:00  WARN [item-service,,] 4444 --- [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@325fe11a}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2023-07-18T22:04:51.222+09:00  WARN [item-service,,] 4444 --- [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@325fe11a}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 5 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender$RestTemplateHttpPostCall.doExecute(ZipkinRestTemplateSender.java:68) ~[spring-boot-actuator-autoconfigure-3.0.2.jar:3.0.2]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender$RestTemplateHttpPostCall.doExecute(ZipkinRestTemplateSender.java:48) ~[spring-boot-actuator-autoconfigure-3.0.2.jar:3.0.2]
+	at zipkin2.Call$Base.execute(Call.java:391) ~[zipkin-2.23.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.16.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.16.3.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory$1.run(PlainConnectionSocketFactory.java:87) ~[httpclient5-5.1.4.jar:5.1.4]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:190) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:54) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862) ~[spring-web-6.0.4.jar:6.0.4]
+	... 8 common frames omitted
+
+2023-07-18T22:05:19.862+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-07-18T22:05:19.863+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-07-18T22:05:19.863+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-07-18T22:05:19.863+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-07-18T22:05:19.863+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-07-18T22:05:19.863+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2023-07-18T22:05:19.863+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-07-18T22:05:19.890+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-07-18T22:05:59.109+09:00  INFO [item-service,,] 4444 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-18T22:05:59.111+09:00  INFO [item-service,,] 4444 --- [Thread-6] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ITEM-SERVICE with eureka with status DOWN
+2023-07-18T22:05:59.112+09:00  INFO [item-service,,] 4444 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1689685559112, current=DOWN, previous=UP]
+2023-07-18T22:05:59.112+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:cf772d2d4134c8b277c146e812d51632: registering service...
+2023-07-18T22:05:59.118+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:cf772d2d4134c8b277c146e812d51632 - registration status: 204
+2023-07-18T22:05:59.125+09:00  INFO [item-service,,] 4444 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-18T22:05:59.126+09:00  INFO [item-service,,] 4444 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-18T22:05:59.129+09:00  WARN [item-service,,] 4444 --- [Thread-6] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@325fe11a}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ app//zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:270)
+ app//zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-07-18T22:05:59.140+09:00  INFO [item-service,,] 4444 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-18T22:05:59.144+09:00  INFO [item-service,,] 4444 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-18T22:05:59.152+09:00  INFO [item-service,,] 4444 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-18T22:05:59.915+09:00  INFO [item-service,,] 4444 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-07-18T22:06:02.930+09:00  INFO [item-service,,] 4444 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-07-18T22:06:02.937+09:00  INFO [item-service,,] 4444 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:cf772d2d4134c8b277c146e812d51632 - deregister  status: 200
+2023-07-18T22:06:02.941+09:00  INFO [item-service,,] 4444 --- [Thread-6] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-07-18T22:06:03.414+09:00  INFO [item-service,,] 4444 --- [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "local"
+2023-07-18T22:06:03.883+09:00  INFO [item-service,,] 4444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-18T22:06:03.892+09:00  INFO [item-service,,] 4444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2023-07-18T22:06:04.014+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=869afe0d-4213-3bee-a0d8-7dd3fba0ab20
+2023-07-18T22:06:04.033+09:00  INFO [item-service,,] 4444 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.msa.item.feign.HistoryFeignClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-18T22:06:04.252+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-18T22:06:04.252+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-18T22:06:04.252+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-07-18T22:06:04.302+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-18T22:06:04.302+09:00  INFO [item-service,,] 4444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 885 ms
+2023-07-18T22:06:04.668+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-18T22:06:04.672+09:00  WARN [item-service,,] 4444 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-18T22:06:04.676+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-07-18T22:06:04.679+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@2a708af3
+2023-07-18T22:06:04.679+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-07-18T22:06:04.679+09:00  INFO [item-service,,] 4444 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-07-18T22:06:04.680+09:00  WARN [item-service,,] 4444 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-07-18T22:06:05.018+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-18T22:06:05.019+09:00  INFO [item-service,,] 4444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-18T22:06:05.279+09:00  WARN [item-service,,] 4444 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-18T22:06:05.386+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-18T22:06:05.407+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'history-service' URL not provided. Will try picking an instance via load-balancing.
+2023-07-18T22:06:07.890+09:00  INFO [item-service,,] 4444 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-07-18T22:06:07.984+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 28 endpoint(s) beneath base path '/actuator'
+2023-07-18T22:06:08.051+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2671 (http) with context path ''
+2023-07-18T22:06:08.051+09:00  INFO [item-service,,] 4444 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2671
+2023-07-18T22:06:08.052+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-07-18T22:06:08.057+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-07-18T22:06:08.057+09:00  INFO [item-service,,] 4444 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-18T22:06:08.065+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-07-18T22:06:08.065+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-07-18T22:06:08.065+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-07-18T22:06:08.065+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-07-18T22:06:08.065+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-07-18T22:06:08.065+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-07-18T22:06:08.065+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-07-18T22:06:08.083+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-07-18T22:06:08.083+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-07-18T22:06:08.084+09:00  INFO [item-service,,] 4444 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-18T22:06:08.085+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1689685568085 with initial instances count: 1
+2023-07-18T22:06:08.097+09:00  INFO [item-service,,] 4444 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ITEM-SERVICE with eureka with status UP
+2023-07-18T22:06:08.098+09:00  INFO [item-service,,] 4444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1689685568098, current=UP, previous=STARTING]
+2023-07-18T22:06:08.098+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:d6ca764bbbb1e132f5b559608c4ad1d4: registering service...
+2023-07-18T22:06:08.108+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:d6ca764bbbb1e132f5b559608c4ad1d4 - registration status: 204
+2023-07-18T22:06:08.239+09:00  INFO [item-service,,] 4444 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 5.243 seconds (process running for 90.078)
+2023-07-18T22:06:08.244+09:00  INFO [item-service,,] 4444 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ShutdownEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ShutdownEndpointAutoConfiguration#shutdownEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.ShutdownEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-07-18T22:06:10.003+09:00  INFO [item-service,,] 4444 --- [http-nio-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-18T22:06:10.003+09:00  INFO [item-service,,] 4444 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-18T22:06:10.005+09:00  INFO [item-service,,] 4444 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-18T22:06:11.013+09:00  WARN [item-service,,] 4444 --- [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@1f7c7b42}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2023-07-18T22:06:11.013+09:00  WARN [item-service,,] 4444 --- [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@1f7c7b42}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 5 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender$RestTemplateHttpPostCall.doExecute(ZipkinRestTemplateSender.java:68) ~[spring-boot-actuator-autoconfigure-3.0.2.jar:3.0.2]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender$RestTemplateHttpPostCall.doExecute(ZipkinRestTemplateSender.java:48) ~[spring-boot-actuator-autoconfigure-3.0.2.jar:3.0.2]
+	at zipkin2.Call$Base.execute(Call.java:391) ~[zipkin-2.23.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.16.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.16.3.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory$1.run(PlainConnectionSocketFactory.java:87) ~[httpclient5-5.1.4.jar:5.1.4]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:190) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:54) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862) ~[spring-web-6.0.4.jar:6.0.4]
+	... 8 common frames omitted
+
+2023-07-18T22:06:17.752+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-07-18T22:06:17.753+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ITEM-SERVICE with eureka with status DOWN
+2023-07-18T22:06:17.753+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1689685577753, current=DOWN, previous=UP]
+2023-07-18T22:06:17.753+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:d6ca764bbbb1e132f5b559608c4ad1d4: registering service...
+2023-07-18T22:06:17.759+09:00  INFO [item-service,,] 4444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:d6ca764bbbb1e132f5b559608c4ad1d4 - registration status: 204
+2023-07-18T22:06:17.764+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-18T22:06:17.764+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-18T22:06:17.766+09:00  WARN [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@1f7c7b42}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ app//zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:270)
+ app//zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-07-18T22:06:17.771+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-18T22:06:17.771+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-07-18T22:06:17.773+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-07-18T22:06:18.097+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-07-18T22:06:21.112+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-07-18T22:06:21.117+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:d6ca764bbbb1e132f5b559608c4ad1d4 - deregister  status: 200
+2023-07-18T22:06:21.120+09:00  INFO [item-service,,] 4444 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-07-18T22:06:26.503+09:00  INFO [item-service,,] 16312 --- [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "local"
+2023-07-18T22:06:27.668+09:00  INFO [item-service,,] 16312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-18T22:06:27.816+09:00  INFO [item-service,,] 16312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interfaces.
+2023-07-18T22:06:28.219+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=869afe0d-4213-3bee-a0d8-7dd3fba0ab20
+2023-07-18T22:06:28.295+09:00  INFO [item-service,,] 16312 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.msa.item.feign.HistoryFeignClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-18T22:06:29.163+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-18T22:06:29.174+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-18T22:06:29.174+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-07-18T22:06:29.267+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-18T22:06:29.267+09:00  INFO [item-service,,] 16312 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2751 ms
+2023-07-18T22:06:30.047+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-18T22:06:30.107+09:00  INFO [item-service,,] 16312 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-07-18T22:06:30.286+09:00  WARN [item-service,,] 16312 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-18T22:06:30.417+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-18T22:06:30.495+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@39fa008f
+2023-07-18T22:06:30.497+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-18T22:06:30.518+09:00  INFO [item-service,,] 16312 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-07-18T22:06:30.519+09:00  WARN [item-service,,] 16312 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-07-18T22:06:31.602+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-18T22:06:31.612+09:00  INFO [item-service,,] 16312 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-18T22:06:32.166+09:00  WARN [item-service,,] 16312 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-18T22:06:32.305+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-18T22:06:32.347+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'history-service' URL not provided. Will try picking an instance via load-balancing.
+2023-07-18T22:06:35.478+09:00  INFO [item-service,,] 16312 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-07-18T22:06:35.611+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 28 endpoint(s) beneath base path '/actuator'
+2023-07-18T22:06:35.743+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2725 (http) with context path ''
+2023-07-18T22:06:35.744+09:00  INFO [item-service,,] 16312 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2725
+2023-07-18T22:06:35.749+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-07-18T22:06:35.793+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-07-18T22:06:35.798+09:00  INFO [item-service,,] 16312 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-18T22:06:35.822+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-07-18T22:06:35.822+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-07-18T22:06:35.823+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-07-18T22:06:35.823+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-07-18T22:06:35.823+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-07-18T22:06:35.823+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-07-18T22:06:35.823+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-07-18T22:06:35.930+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-07-18T22:06:35.932+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-07-18T22:06:35.935+09:00  INFO [item-service,,] 16312 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-18T22:06:35.939+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1689685595938 with initial instances count: 0
+2023-07-18T22:06:35.952+09:00  INFO [item-service,,] 16312 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ITEM-SERVICE with eureka with status UP
+2023-07-18T22:06:35.953+09:00  INFO [item-service,,] 16312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1689685595953, current=UP, previous=STARTING]
+2023-07-18T22:06:35.955+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:c0dcf258014ec29fd18655d4c92aa24e: registering service...
+2023-07-18T22:06:35.991+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:c0dcf258014ec29fd18655d4c92aa24e - registration status: 204
+2023-07-18T22:06:36.118+09:00  INFO [item-service,,] 16312 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 11.031 seconds (process running for 11.976)
+2023-07-18T22:06:40.073+09:00  INFO [item-service,,] 16312 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-18T22:06:40.074+09:00  INFO [item-service,,] 16312 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-18T22:06:40.076+09:00  INFO [item-service,,] 16312 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-18T22:06:41.196+09:00  WARN [item-service,,] 16312 --- [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@5d941c93}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2023-07-18T22:06:41.196+09:00  WARN [item-service,,] 16312 --- [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@5d941c93}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 5 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender$RestTemplateHttpPostCall.doExecute(ZipkinRestTemplateSender.java:68) ~[spring-boot-actuator-autoconfigure-3.0.2.jar:3.0.2]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender$RestTemplateHttpPostCall.doExecute(ZipkinRestTemplateSender.java:48) ~[spring-boot-actuator-autoconfigure-3.0.2.jar:3.0.2]
+	at zipkin2.Call$Base.execute(Call.java:391) ~[zipkin-2.23.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.16.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.16.3.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:9411 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory$1.run(PlainConnectionSocketFactory.java:87) ~[httpclient5-5.1.4.jar:5.1.4]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:190) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:54) ~[httpclient5-5.1.4.jar:5.1.4]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-6.0.4.jar:6.0.4]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862) ~[spring-web-6.0.4.jar:6.0.4]
+	... 8 common frames omitted
+
+2023-07-18T22:07:05.936+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-07-18T22:07:05.937+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-07-18T22:07:05.937+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-07-18T22:07:05.937+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-07-18T22:07:05.937+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-07-18T22:07:05.937+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2023-07-18T22:07:05.937+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-07-18T22:07:05.946+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-07-18T22:07:12.021+09:00  INFO [item-service,,] 16312 --- [Thread-11] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ITEM-SERVICE with eureka with status DOWN
+2023-07-18T22:07:12.022+09:00  INFO [item-service,,] 16312 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1689685632022, current=DOWN, previous=UP]
+2023-07-18T22:07:12.022+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:c0dcf258014ec29fd18655d4c92aa24e: registering service...
+2023-07-18T22:07:12.031+09:00  INFO [item-service,,] 16312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:c0dcf258014ec29fd18655d4c92aa24e - registration status: 204
+2023-07-18T22:07:12.039+09:00  INFO [item-service,,] 16312 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-18T22:07:12.040+09:00  INFO [item-service,,] 16312 --- [Thread-11] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-18T22:07:12.043+09:00  WARN [item-service,,] 16312 --- [Thread-11] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@5d941c93}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ app//zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:270)
+ app//zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-07-18T22:07:12.052+09:00  INFO [item-service,,] 16312 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-18T22:07:12.056+09:00  INFO [item-service,,] 16312 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-18T22:07:12.059+09:00  INFO [item-service,,] 16312 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-18T22:07:12.300+09:00  INFO [item-service,,] 16312 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-07-18T22:07:15.306+09:00  INFO [item-service,,] 16312 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-07-18T22:07:15.321+09:00  INFO [item-service,,] 16312 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9.mshome.net:c0dcf258014ec29fd18655d4c92aa24e - deregister  status: 200
+2023-07-18T22:07:15.328+09:00  INFO [item-service,,] 16312 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
